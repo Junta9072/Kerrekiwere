@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: DotMatrix;
+  src: url(DOTMATRX.TTF);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+main {
+  display: grid;
+  grid-template-rows: 4vh auto;
+  font-size: 17pt;
+  overflow: hidden;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  margin: 0vw;
+  margin-left: 2vw;
+  font-family: "Space Mono", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.red {
+  color: red;
+}
+
+.veloBox {
+  background-color: #050505;
+}
+
+.veloDisplay {
+  margin: 1vh;
+  margin-top: 0vw;
+  border-top: #000000 1vh solid;
+  border-left: #0e0e0e 1vh solid;
+  border-bottom: #0e0e0e 1vh solid;
+  border-right: #000000 1vh solid;
+}
+
+.deLijnBox {
+  background-color: black;
+}
+
+.nmbsBox {
+  background-color: black;
+}
+
+.weerBox {
+  background-color: black;
 }

@@ -1,0 +1,228 @@
+.LijnContainer {
+  display: grid;
+  grid-template-columns: 72vw 8vw 8vw 8vw;
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+  height: 7.5vh;
+  margin: 1vh;
+  margin-top: 0vw;
+}
+
+.loadingLijn {
+  font-size: 14pt;
+  font-family: DotMatrix;
+  background-color: #070623;
+  margin: 1vh;
+  margin-top: 0vw;
+  border-top: #000000 1vh solid;
+  border-left: #0e0e0e 1vh solid;
+  border-bottom: #0e0e0e 1vh solid;
+  border-right: #000000 1vh solid;
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+
+  background-image: url("../bus1.svg");
+  background-size: 7.5vh;
+  background-repeat: no-repeat;
+  background-position: 50vw bottom;
+  animation-name: busBop;
+  animation-duration: 5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+}
+
+@keyframes busBop {
+  2.5% {
+    background-image: url("../bus1.svg");
+  }
+  5% {
+    background-image: url("../bus2.svg");
+    background-position: 48vw bottom;
+  }
+  7.5% {
+    background-image: url("../bus1.svg");
+  }
+  10% {
+    background-image: url("../bus2.svg");
+    background-position: 47vw bottom;
+  }
+  12.5% {
+    background-image: url("../bus1.svg");
+  }
+  15% {
+    background-image: url("../bus2.svg");
+    background-position: 46vw bottom;
+  }
+  17.5% {
+    background-image: url("../bus1.svg");
+  }
+  20% {
+    background-image: url("../bus2.svg");
+    background-position: 45vw bottom;
+  }
+  22.5% {
+    background-image: url("../bus1.svg");
+  }
+  25% {
+    background-image: url("../bus2.svg");
+    background-position: 44vw bottom;
+  }
+  27.5% {
+    background-image: url("../bus1.svg");
+  }
+  30% {
+    background-image: url("../bus2.svg");
+    background-position: 43vw bottom;
+  }
+  32.5% {
+    background-image: url("../bus1.svg");
+  }
+  35% {
+    background-image: url("../bus2.svg");
+    background-position: 42vw bottom;
+  }
+  37.5% {
+    background-image: url("../bus1.svg");
+  }
+  40% {
+    background-image: url("../bus2.svg");
+    background-position: 41vw bottom;
+  }
+  42.5% {
+    background-image: url("../bus1.svg");
+  }
+  45% {
+    background-image: url("../bus2.svg");
+    background-position: 40vw bottom;
+  }
+  47.5% {
+    background-image: url("../bus1.svg");
+  }
+  50% {
+    background-image: url("../bus2.svg");
+    background-position: 39vw bottom;
+  }
+  52.5% {
+    background-image: url("../bus1.svg");
+  }
+  55% {
+    background-image: url("../bus2.svg");
+    background-position: 38vw bottom;
+  }
+  57.5% {
+    background-image: url("../bus1.svg");
+  }
+  60% {
+    background-image: url("../bus2.svg");
+    background-position: 37vw bottom;
+  }
+  62.5% {
+    background-image: url("../bus1.svg");
+  }
+  65% {
+    background-image: url("../bus2.svg");
+    background-position: 36vw bottom;
+  }
+  67.5% {
+    background-image: url("../bus1.svg");
+  }
+  70% {
+    background-image: url("../bus2.svg");
+    background-position: 35vw bottom;
+  }
+  72.5% {
+    background-image: url("../bus1.svg");
+  }
+  75% {
+    background-image: url("../bus2.svg");
+    background-position: 34vw bottom;
+  }
+  77.5% {
+    background-image: url("../bus1.svg");
+  }
+  80% {
+    background-image: url("../bus2.svg");
+    background-position: 33vw bottom;
+  }
+  82.5% {
+    background-image: url("../bus1.svg");
+  }
+  85% {
+    background-image: url("../bus2.svg");
+    background-position: 32vw bottom;
+  }
+  87.5% {
+    background-image: url("../bus1.svg");
+  }
+  90% {
+    background-image: url("../bus2.svg");
+    background-position: 31vw bottom;
+  }
+  92.5% {
+    background-image: url("../bus1.svg");
+  }
+  95% {
+    background-image: url("../bus2.svg");
+    background-position: 30vw bottom;
+  }
+  97.5% {
+    background-image: url("../bus1.svg");
+  }
+  100% {
+    background-image: url("../bus2.svg");
+    background-position: 29vw bottom;
+  }
+}
+
+.loadingFinish {
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-top: #000000 1vh solid;
+  border-left: #0e0e0e 1vh solid;
+  border-bottom: #0e0e0e 1vh solid;
+  border-right: #000000 1vh solid;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.halteSelect {
+  color: white;
+  font-family: DotMatrix;
+  background-color: #070623;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.lijnp,
+.lijnm,
+.lijnreset {
+  text-align: center;
+  width: 100%;
+}
+
+.destination,
+.tminus,
+.n° {
+  color: white;
+  font-family: DotMatrix;
+  background-color: #070623;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-top: #000000 1vh solid;
+  border-left: #0e0e0e 1vh solid;
+  border-bottom: #0e0e0e 1vh solid;
+  border-right: #000000 1vh solid;
+}
+
+.time {
+  display: grid;
+  grid-template-columns: 18vw auto 18vw;
+  display: grid;
+  margin: 1vh;
+}

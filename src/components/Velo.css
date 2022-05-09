@@ -1,0 +1,52 @@
+.Velo {
+  color: white;
+  display: grid;
+  grid-template-columns: 74vw 8vw 6vw;
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-family: DotMatrix;
+  background-color: #070623;
+}
+
+.veloName {
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.veloFree {
+  text-align: right;
+}
+
+.veloLow {
+  background-image: url("../fiets.svg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  animation-name: veloANI;
+  animation-duration: 1s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+}
+
+.veloIcon {
+  background-image: url("../fiets.svg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+@keyframes veloANI {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

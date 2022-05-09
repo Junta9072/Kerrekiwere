@@ -1,0 +1,58 @@
+.weer {
+  display: grid;
+  grid-template-columns: 16vw 80vw;
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.graph {
+  display: grid;
+  column-width: 1vw;
+  grid-template-rows: 100%;
+  grid-auto-flow: column;
+  height: 100%;
+  border-top: #000000 1vh solid;
+  border-left: #0e0e0e 1vh solid;
+  border-bottom: #0e0e0e 1vh solid;
+  border-right: #000000 1vh solid;
+  background-color: #070623;
+  height: 5vh;
+}
+
+.tempbol {
+  background-image: url("../temp.svg");
+  background-size: contain;
+  width: 1vw;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transform: translateY(-7.5vw);
+}
+
+.bol {
+  background-image: url("../rain.svg");
+  background-size: contain;
+  width: 1vw;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transform: translateY(7.5vw);
+}
+
+.rain {
+  font-family: "Space Mono";
+  font-weight: lighter;
+  font-size: 14pt;
+  color: #86a5d9;
+}
+
+.temp {
+  font-family: "Space Mono";
+  font-weight: lighter;
+  font-size: 14pt;
+  color: #e65f5c;
+}
+
+.guide {
+  line-height: 15pt;
+}
