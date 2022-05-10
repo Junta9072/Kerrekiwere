@@ -10,7 +10,7 @@ function Velo(props) {
   useEffect(() => {
     async function getStations() {
       const response = await fetch(
-        "http://api.citybik.es/v2/networks/velo-antwerpen"
+        "https://api.citybik.es/v2/networks/velo-antwerpen"
       );
       let json = await response.json();
       //geolocation ophalen
