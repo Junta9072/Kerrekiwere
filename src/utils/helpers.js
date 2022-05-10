@@ -4,6 +4,10 @@ export function degreesToRadians(degrees) {
   return (degrees * Math.PI) / 180;
 }
 
+export function test() {
+  console.log("peepeepoopoo");
+}
+
 // Redians to Degrees
 export function radiansToDegrees(radians) {
   return (radians * 180) / Math.PI;

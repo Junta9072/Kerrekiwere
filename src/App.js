@@ -48,7 +48,7 @@ function App() {
         <h1>
           De lijn<span className="red">.</span>
         </h1>
-        <Lijn lat={lat} lon={lon} />
+        {lat && lon && <Lijn lat={lat} lon={lon} />}
       </div>
       <div className="nmbsBox"></div>
       <div className="weerBox">
