@@ -37,10 +37,10 @@ function Lijn(props) {
 
       results.forEach((halte, i) => {
         halte["distance"] = getDistance(
-          props.lat,
           props.lon,
-          halte.geoCoordinaat.latitude,
-          halte.geoCoordinaat.longitude
+          props.lat,
+          halte.geoCoordinaat.lon,
+          halte.geoCoordinaat.lat
         );
       });
       //    sorteer de array
