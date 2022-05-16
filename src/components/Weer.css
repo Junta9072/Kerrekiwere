@@ -1,6 +1,7 @@
 .weer {
   display: grid;
   grid-template-columns: 16vw 80vw;
+  grid-template-rows: auto 3vh;
   padding-top: 2vw;
   padding-bottom: 1vw;
   padding-left: 2vw;
@@ -19,6 +20,16 @@
   border-right: #000000 1vh solid;
   background-color: #070623;
   height: 5vh;
+}
+
+.turf {
+  grid-area: 2/2/3/3;
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
+  font-family: "Space Mono";
+  font-weight: lighter;
+  font-size: 8pt;
+  color: white;
 }
 
 .tempbol {

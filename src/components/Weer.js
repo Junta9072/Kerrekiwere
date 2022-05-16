@@ -67,6 +67,16 @@ function Weer(props) {
             })
           : "loading"}
       </div>
+      <div className="turf">
+        <span>now</span>
+        <span>+6u</span>
+        <span>+12u</span>
+        <span>+18u</span>
+        <span>+24u</span>
+        <span>+30u</span>
+        <span>+36u</span>
+        <span>+32u</span>
+      </div>
     </div>
   );
 }

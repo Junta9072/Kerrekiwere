@@ -9,6 +9,9 @@ import { useEffect, useState } from "react";
 function App() {
   const [lat, setLat] = useState(0);
   const [lon, setLon] = useState(0);
+  const [mode, setMode] = useState(false);
+  const [light, setLight] = useState(null);
+  const [currentMode, setCurrentMode] = useState("LightMode");
 
   function getLocation() {
     if (navigator.geolocation) {
@@ -31,9 +34,10 @@ function App() {
     getLocation();
   }, []);
 
+  function modeSwitch() {}
+
   return (
-    <main>
-      <div className="topBar"></div>
+    <main className={light}>
       <div className="veloBox">
         <h1>
           Velo<span className="red">.</span>
@@ -57,6 +61,24 @@ function App() {
         </h1>
         {lat && lon && <Weer lat={lat} lon={lon} />}
       </div>
+      <button
+        className="modeSwitch"
+        onClick={() => {
+          if (mode == false) {
+            console.log(mode);
+            setLight("light");
+            setMode(true);
+            setCurrentMode("Darkmode");
+          } else if (mode == true) {
+            console.log(mode);
+            setLight(null);
+            setMode(false);
+            setCurrentMode("LightMode");
+          }
+        }}
+      >
+        {currentMode}
+      </button>
     </main>
   );
 }

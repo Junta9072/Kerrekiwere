@@ -5,10 +5,216 @@
 
 main {
   display: grid;
-  grid-template-rows: 4vh auto;
+  grid-template-rows: auto;
   font-size: 17pt;
   overflow: hidden;
   color: white;
+}
+
+.light {
+  color: #3d11b5;
+  background-color: #fff4db;
+}
+
+.light div {
+  color: #3d11b5;
+  background-color: #fff4db;
+}
+
+.light .veloDisplay,
+.light .halteSelect,
+.light .n°,
+.light .tminus,
+.light .destination,
+.light .loadingLijn,
+.light .graph {
+  color: black;
+  background-color: #91a72e;
+  border-color: #918d96;
+}
+
+.light .bol,
+.light .tempbol {
+  background-color: transparent;
+}
+
+.light .bol {
+  background-image: url("bolLight.svg");
+}
+
+.light .tempbol {
+  background-image: url("tempLight.svg");
+}
+
+.light .loadingLijn {
+  animation-name: busBopLight;
+  animation-duration: 5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+}
+
+.light .temp {
+  color: gray;
+}
+
+.light .rain {
+  color: black;
+}
+
+@keyframes busBopLight {
+  2.5% {
+    background-image: url("buslight.svg");
+  }
+  5% {
+    background-image: url("buslight2.svg");
+    background-position: 48vw bottom;
+  }
+  7.5% {
+    background-image: url("buslight.svg");
+  }
+  10% {
+    background-image: url("buslight2.svg");
+    background-position: 47vw bottom;
+  }
+  12.5% {
+    background-image: url("buslight.svg");
+  }
+  15% {
+    background-image: url("buslight2.svg");
+    background-position: 46vw bottom;
+  }
+  17.5% {
+    background-image: url("buslight.svg");
+  }
+  20% {
+    background-image: url("buslight2.svg");
+    background-position: 45vw bottom;
+  }
+  22.5% {
+    background-image: url("buslight.svg");
+  }
+  25% {
+    background-image: url("buslight2.svg");
+    background-position: 44vw bottom;
+  }
+  27.5% {
+    background-image: url("buslight.svg");
+  }
+  30% {
+    background-image: url("buslight2.svg");
+    background-position: 43vw bottom;
+  }
+  32.5% {
+    background-image: url("buslight.svg");
+  }
+  35% {
+    background-image: url("buslight2.svg");
+    background-position: 42vw bottom;
+  }
+  37.5% {
+    background-image: url("buslight.svg");
+  }
+  40% {
+    background-image: url("buslight2.svg");
+    background-position: 41vw bottom;
+  }
+  42.5% {
+    background-image: url("buslight.svg");
+  }
+  45% {
+    background-image: url("buslight2.svg");
+    background-position: 40vw bottom;
+  }
+  47.5% {
+    background-image: url("buslight.svg");
+  }
+  50% {
+    background-image: url("buslight2.svg");
+    background-position: 39vw bottom;
+  }
+  52.5% {
+    background-image: url("buslight.svg");
+  }
+  55% {
+    background-image: url("buslight2.svg");
+    background-position: 38vw bottom;
+  }
+  57.5% {
+    background-image: url("buslight.svg");
+  }
+  60% {
+    background-image: url("buslight2.svg");
+    background-position: 37vw bottom;
+  }
+  62.5% {
+    background-image: url("buslight.svg");
+  }
+  65% {
+    background-image: url("buslight2.svg");
+    background-position: 36vw bottom;
+  }
+  67.5% {
+    background-image: url("buslight.svg");
+  }
+  70% {
+    background-image: url("buslight2.svg");
+    background-position: 35vw bottom;
+  }
+  72.5% {
+    background-image: url("buslight.svg");
+  }
+  75% {
+    background-image: url("buslight2.svg");
+    background-position: 34vw bottom;
+  }
+  77.5% {
+    background-image: url("buslight.svg");
+  }
+  80% {
+    background-image: url("buslight2.svg");
+    background-position: 33vw bottom;
+  }
+  82.5% {
+    background-image: url("buslight.svg");
+  }
+  85% {
+    background-image: url("buslight2.svg");
+    background-position: 32vw bottom;
+  }
+  87.5% {
+    background-image: url("buslight.svg");
+  }
+  90% {
+    background-image: url("buslight2.svg");
+    background-position: 31vw bottom;
+  }
+  92.5% {
+    background-image: url("buslight.svg");
+  }
+  95% {
+    background-image: url("buslight2.svg");
+    background-position: 30vw bottom;
+  }
+  97.5% {
+    background-image: url("buslight.svg");
+  }
+  100% {
+    background-image: url("buslight2.svg");
+    background-position: 29vw bottom;
+  }
+}
+
+.light .veloName,
+.light .veloFree {
+  color: black;
+}
+
+.light .veloIcon {
+  background-image: url("fietslight.svg");
+}
+
+.light .Velo {
+  background-color: transparent;
 }
 
 h1 {
@@ -34,6 +240,10 @@ h1 {
   border-right: #000000 1vh solid;
 }
 
+.destination {
+  padding: 0.25vw;
+}
+
 .deLijnBox {
   background-color: black;
 }
@@ -44,4 +254,8 @@ h1 {
 
 .weerBox {
   background-color: black;
+}
+
+.modeSwitch {
+  height: 8vw;
 }
