@@ -12,6 +12,7 @@ function App() {
   const [mode, setMode] = useState(false);
   const [light, setLight] = useState(null);
   const [currentMode, setCurrentMode] = useState("LightMode");
+  const [ldrClass, setLdrClass] = useState("logoHeen");
 
   function getLocation() {
     if (navigator.geolocation) {
@@ -38,6 +39,33 @@ function App() {
 
   return (
     <main className={light}>
+      <div>
+        <h1>
+          <div
+            className={"logo " + ldrClass}
+            onClick={() => {
+              if (mode == false) {
+                console.log(mode);
+                setLight("light");
+                setMode(true);
+                setCurrentMode("Darkmode");
+                setLdrClass("logoTerug");
+              } else if (mode == true) {
+                console.log(mode);
+                setLight(null);
+                setMode(false);
+                setCurrentMode("LightMode");
+                setLdrClass("logoHeen");
+              }
+            }}
+          >
+            <span>c</span>
+            <span>o</span>mute
+          </div>
+          <p className="pDesc">click header to change light/dark mode</p>
+        </h1>
+      </div>
+
       <div className="veloBox">
         <h1>
           Velo<span className="red">.</span>
@@ -61,24 +89,6 @@ function App() {
         </h1>
         {lat && lon && <Weer lat={lat} lon={lon} />}
       </div>
-      <button
-        className="modeSwitch"
-        onClick={() => {
-          if (mode == false) {
-            console.log(mode);
-            setLight("light");
-            setMode(true);
-            setCurrentMode("Darkmode");
-          } else if (mode == true) {
-            console.log(mode);
-            setLight(null);
-            setMode(false);
-            setCurrentMode("LightMode");
-          }
-        }}
-      >
-        {currentMode}
-      </button>
     </main>
   );
 }

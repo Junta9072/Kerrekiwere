@@ -9,6 +9,98 @@ main {
   font-size: 17pt;
   overflow: hidden;
   color: white;
+  background-color: black;
+}
+
+.logo {
+  width: 80vw;
+  font-size: 10vh;
+  padding: 0vw;
+  margin-bottom: -10vw;
+  margin-top: -7vw;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 17%,
+    rgba(255, 255, 255, 1) 17%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.light .logo {
+  width: 80vw;
+  font-size: 10vh;
+  padding: 0vw;
+  margin-bottom: -10vw;
+  margin-top: -7vw;
+  background: linear-gradient(
+    90deg,
+    #3d11b5 0%,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 17%,
+    #3d11b5 17%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logoHeen {
+  animation: gradSwitch 1s ease-in-out 1 both;
+}
+@keyframes gradSwitch {
+  0% {
+    background-position: 0vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 80vw;
+  }
+  50% {
+    background-position: 0vw;
+    background-size: 150vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background-position: 12vw;
+    background-size: 80vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.logoTerug {
+  animation: gradBack 1s ease-in-out 1 both;
+}
+
+@keyframes gradBack {
+  100% {
+    background-position: 0vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 80vw;
+  }
+  50% {
+    background-position: 0vw;
+    background-size: 150vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  0% {
+    background-position: 12vw;
+    background-size: 80vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.pDesc {
+  padding-top: 2vw;
+  font-size: 10pt;
+  font-weight: lighter;
+  font-style: italic;
+  transform: translateX(2vw);
+  color: darkgray;
 }
 
 .light {
@@ -238,10 +330,6 @@ h1 {
   border-left: #0e0e0e 1vh solid;
   border-bottom: #0e0e0e 1vh solid;
   border-right: #000000 1vh solid;
-}
-
-.destination {
-  padding: 0.25vw;
 }
 
 .deLijnBox {

@@ -1,11 +1,12 @@
 .LijnContainer {
   display: grid;
-  grid-template-columns: 72vw 8vw 8vw 8vw;
+  grid-template-columns: 7vw 7vw 72vw 7vw;
   padding-top: 2vw;
   padding-bottom: 1vw;
   height: 7.5vh;
   margin: 1vh;
   margin-top: 0vw;
+  grid-gap: 1vw;
 }
 
 .loadingLijn {
@@ -203,6 +204,33 @@
 .lijnreset {
   text-align: center;
   width: 100%;
+  height: 10vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  margin-top: 0.5vw;
+  padding-top: 3.25vw;
+  border-radius: 0.75vw;
+
+  border: 0.75vw solid;
+  border-color: #0e0e0e;
+  font-family: "Space Mono";
+  background-color: black;
+}
+
+.lijnreset {
+  color: white;
+}
+
+.lijnm {
+  margin-left: -1vw;
+  color: #e65f5c;
+}
+
+.lijnp {
+  margin-right: 0.5vw;
+  color: #86a5d9;
 }
 
 .destination,
@@ -218,6 +246,7 @@
   border-left: #0e0e0e 1vh solid;
   border-bottom: #0e0e0e 1vh solid;
   border-right: #000000 1vh solid;
+  padding-top: 1vw;
 }
 
 .time {

@@ -118,23 +118,6 @@ function Lijn(props) {
   return (
     <div className="Lijn">
       <div className="LijnContainer">
-        <span className={lijnStop}>{halte}</span>
-        <span
-          className="lijnp"
-          onClick={() => {
-            setCount(count - 1);
-          }}
-        >
-          -
-        </span>
-        <span
-          className="lijnm"
-          onClick={() => {
-            setCount(count + 1);
-          }}
-        >
-          +
-        </span>
         <span
           className="lijnreset"
           onClick={() => {
@@ -142,6 +125,24 @@ function Lijn(props) {
           }}
         >
           *
+        </span>
+        <span
+          className="lijnp"
+          onClick={() => {
+            setCount(count - 1);
+          }}
+        >
+          {"<"}
+        </span>
+        <span className={lijnStop}>{halte}</span>
+
+        <span
+          className="lijnm"
+          onClick={() => {
+            setCount(count + 1);
+          }}
+        >
+          {">"}
         </span>
       </div>
       <div className="timetable">
