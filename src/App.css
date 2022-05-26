@@ -7,6 +7,10 @@ html {
   background-color: black;
 }
 
+.light html {
+  background-color: #918d96;
+}
+
 main {
   display: grid;
   grid-template-rows: auto;
