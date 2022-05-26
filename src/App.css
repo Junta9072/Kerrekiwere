@@ -3,6 +3,10 @@
   src: url(DOTMATRX.TTF);
 }
 
+html {
+  background-color: black;
+}
+
 main {
   display: grid;
   grid-template-rows: auto;
@@ -307,6 +311,26 @@ main {
 
 .light .Velo {
   background-color: transparent;
+}
+
+.light .lijnreset {
+  background-color: #fff4db;
+  color: black;
+  border-color: #ffedc2;
+}
+
+.light .lijnm {
+  margin-left: -1vw;
+  color: #e65f5c;
+  background-color: #fff4db;
+  border-color: #ffedc2;
+}
+
+.light .lijnp {
+  margin-right: 0.5vw;
+  color: #86a5d9;
+  background-color: #fff4db;
+  border-color: #ffedc2;
 }
 
 h1 {
